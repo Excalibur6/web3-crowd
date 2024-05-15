@@ -1,4 +1,3 @@
-
 # Web3 Crowdfunding Project
 
 This project is a decentralized crowdfunding platform built on Web3 technology. It leverages modern web development frameworks and libraries to create a seamless user experience.
@@ -30,67 +29,45 @@ Make sure you have the following installed:
    git clone https://github.com/your-username/web3-crowdfunding.git
    cd web3-crowdfunding
 
-Install dependencies:
-sh
-Copy code
-npm install
-# or
-yarn install
-Setting Up the Web3 Part
-Navigate to the Web3 directory:
 
-sh
-Copy code
-cd web3
-Initialize Hardhat:
+Install dependencies
+   ```sh
+      npm install
+      # or
+      yarn install
 
-sh
-Copy code
-npx hardhat
-Install required packages:
 
-sh
-Copy code
-npm install @openzeppelin/contracts dotenv @nomiclabs/hardhat-ethers
-npm install --save-dev hardhat @nomicfoundation/hardhat-toolbox
-Create a .env file and add your private key:
+      Navigate to the Web3 directory:
+      cd web3
+      Initialize Hardhat:
+      npx hardhat
 
-plaintext
-Copy code
-PRIVATE_KEY=your_private_key_here
-Configure Hardhat:
-Copy the hardhat.config.ts file from the repository or set up your own configuration.
+      npm install @openzeppelin/contracts dotenv @nomiclabs/hardhat-ethers
+      npm install --save-dev hardhat @nomicfoundation/hardhat-toolbox
 
-Compile the smart contracts:
+      Compile the smart contracts:
+      npx hardhat compile
+      Deploy the smart contracts:
 
-sh
-Copy code
-npx hardhat compile
-Deploy the smart contracts:
+      npx hardhat run scripts/deploy.ts --network your_network
 
-sh
-Copy code
-npx hardhat run scripts/deploy.ts --network your_network
+```
+
 Setting Up the Frontend
-Navigate to the frontend directory:
 
-sh
-Copy code
-cd frontend
-Install frontend dependencies:
+Install dependencies
+   ```sh
+      cd frontend
+      npm install
+      # or
+      yarn install
 
-sh
-Copy code
-npm install
-# or
-yarn install
-Start the development server:
+      npm run dev
+      npm run build
+      npm start
+```
 
-sh
-Copy code
-npm run dev
-# or
-yarn dev
-Configuration
-Tailwind CSS: Tailwind is already configured in the tailwind.config.js file. You can customize it as needed.
-Thirdweb: Ensure your smart contracts are deployed and integrated with Thirdweb as per the documentation.
+
+
+      
+      cd web3
